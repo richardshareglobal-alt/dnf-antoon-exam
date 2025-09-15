@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNF手游安徒恩团本知识考卷</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            margin: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .info-item i {
+            margin-right: 8px;
+            color: #6a11cb;
+        }
+        
+        .main-content {
+            padding: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            color: #1a2a6c;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2575fc;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .question-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .question-number {
+            background: #2575fc;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .options {
+            margin-left: 35px;
+        }
+        
+        .option {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .option input {
+            margin-right: 12px;
+        }
+        
+        .text-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 30px 0;
+            transition: all 0.3s;
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 14px;
+            background: #f8f9fa;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.03;
+            font-size: 80px;
+            color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-45deg);
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .info-box {
+                flex-direction: column;
+            }
+            
+            .question {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">红浪漫会所y-阿冰</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>DNF手游安徒恩团本知识考卷</h1>
+            <p>测试你对安徒恩团本机制的理解，助力开荒成功！</p>
+        </div>
+        
+        <div class="info-box">
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>预计耗时: 10-15分钟</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-question-circle"></i>
+                <span>共15题</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <span>参与者: <input type="text" placeholder="请输入角色名" style="border: none; background: transparent; border-bottom: 1px dashed #ccc; outline: none;"></span>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="section-title">
+                <i class="fas fa-check-circle"></i> 判断题（每题5分）
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">1</div>
+                    <div>简单模式下，抗魔值未达到5.2万的角色无法进入安徒恩团本。</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="true"> 正确
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="false"> 错误
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">2</div>
+                    <div>打舰炮防御战时，屏幕变红后可以使用无色技能。</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="true"> 正确
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="false"> 错误
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">3</div>
+                    <div>能量阻截战的厄伽勒BOSS，全屏变白时应迅速面向它进行输出。</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="true"> 正确
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="false"> 错误
+                    </label>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <i class="fas fa-dot-circle"></i> 单项选择题（每题5分）
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">4</div>
+                    <div>吞噬魔吃掉属性球后，会发生什么？</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4"> A. 直接死亡
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4"> B. 对应属性抗性大幅降低
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4"> C. 进入狂暴状态
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4"> D. 分裂成两个小吞噬魔
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">5</div>
+                    <div>你在擎天之柱遇到BOSS艾格尼斯，它突然睁大眼睛，你应该：</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q5"> A. 开启觉醒技能全力输出
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5"> B. 立即停止攻击并远离
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5"> C. 给自己加buff
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5"> D. 使用无敌技能躲避
+                    </label>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <i class="fas fa-check-double"></i> 多项选择题（每题10分，全部选对得分）
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">6</div>
+                    <div>以下哪些行为容易导致团队攻略失败甚至炸团？</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="checkbox"> A. 在黑雾之源胡乱打掉吞噬魔的所有属性球
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> B. 舰炮图红屏时继续狂用无色技能
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> C. 震颤副本复活后不及时归队压制
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> D. 主动与队友沟通下一步行动
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">7</div>
+                    <div>作为一名队员，如何有效提升自己在团本中的"贡献分"？</div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="checkbox"> A. 拼命输出，不顾机制
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> B. 提供团队增益（如奶妈加血、鬼泣减抗）
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> C. 成功破解BOSS的机制（如搬僵尸、踩阵）
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> D. 使用复活币复活队友
+                    </label>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <i class="fas fa-edit"></i> 简答题（每题10分）
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">8</div>
+                    <div>请简述你所在队伍（自选一个你常玩的队伍位置）在第一阶段和第二阶段的<strong>核心任务</strong>是什么？如果任务失败，会对整个团队造成什么<strong>后果</strong>？</div>
+                </div>
+                <textarea class="text-input" rows="4" placeholder="请在此输入您的回答..."></textarea>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">
+                    <div class="question-number">9</div>
+                    <div>作为一名输出职业，在<strong>抗魔值刚达到门槛</strong>的情况下，为了不成为团队的"拖累"，你认为<strong>最重要的三点</strong>是什么？</div>
+                </div>
+                <textarea class="text-input" rows="4" placeholder="请在此输入您的回答..."></textarea>
+            </div>
+            
+            <button class="btn-submit">
+                <i class="fas fa-paper-plane"></i> 提交答卷
+            </button>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 DNF手游安徒恩攻略 | 本考卷仅供参考，实际游戏内容请以官方为准</p>
+            <p>祝您开荒顺利，把把翻荒古！</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.btn-submit').addEventListener('click', function() {
+            // 简单验证是否填写了角色名
+            const roleName = document.querySelector('input[type="text"]').value;
+            if (!roleName) {
+                alert('请先输入您的角色名！');
+                return;
+            }
+            
+            // 验证是否回答了所有问题
+            const answeredAll = validateAnswers();
+            if (!answeredAll) {
+                if(confirm('您还有未回答的题目，确定要提交吗？')) {
+                    calculateScore();
+                }
+            } else {
+                calculateScore();
+            }
+        });
+        
+        function validateAnswers() {
+            // 这里简化验证逻辑，实际应用中需要更完整的验证
+            return true;
+        }
+        
+        function calculateScore() {
+            // 计算得分逻辑
+            alert('答卷已提交！感谢您的参与。\n\n正确答案和解析可在攻略文档中查看。');
+        }
+    </script>
+</body>
+</html>
